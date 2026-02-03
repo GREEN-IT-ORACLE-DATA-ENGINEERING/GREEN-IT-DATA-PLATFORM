@@ -113,8 +113,6 @@ Score normalisé (**0.502 à 0.999**) représentant une évaluation globale de l
 
 ---
 
----
-
 ## ✅ Évaluation de la Qualité des Données {#qualité}
 
 Le dataset présente plusieurs caractéristiques positives en termes de qualité :

@@ -1,0 +1,21 @@
+# Fichiers système et temporaires
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environnements virtuels (si vous utilisez Python)
+venv/
+env/
+
+# Fichiers sensibles (Clés API, mots de passe - NE JAMAIS PUBLIER)
+.env
+secrets.json
+
+# Exclusion du Dataset
+# On ignore tout le contenu du dossier dataset (fichiers lourds ou sensibles)...
+dataset/*
+
+# ...MAIS on force l'inclusion de la documentation du dataset
+!dataset/README.md
