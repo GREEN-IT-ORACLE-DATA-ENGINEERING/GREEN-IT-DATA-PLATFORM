@@ -1,0 +1,29 @@
+ALTER SESSION SET CONTAINER = green_it_pdb;
+
+-- 1. STAGING: Raw data landing zone
+CREATE TABLESPACE TS_GREEN_STAGING 
+DATAFILE 'green_stg_01.dbf' SIZE 200M AUTOEXTEND ON NEXT 10M MAXSIZE 500M;
+-- 2. DIM_WORKLOAD: Storage for workload metadata
+CREATE TABLESPACE TS_DIM_WORKLOAD 
+DATAFILE 'dim_work_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 500M;
+-- 3. DIM_ENERGY: Storage for energy source details
+CREATE TABLESPACE TS_DIM_ENERGY 
+DATAFILE 'dim_ener_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 300M;
+-- 4. DIM_SECURITY: Storage for security levels and PQC status
+CREATE TABLESPACE TS_DIM_SECURITY 
+DATAFILE 'dim_secu_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 300M;
+-- 5. DIM_SCENARIO: Storage for scenarios and strategies
+CREATE TABLESPACE TS_DIM_SCENARIO 
+DATAFILE 'dim_scen_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 300M;
+-- 6. FACT_GREEN_WORKLOAD: The heavy-lifter (Measures & Metrics)
+CREATE TABLESPACE TS_FACT_GREEN 
+DATAFILE 'fact_green_01.dbf' SIZE 200M AUTOEXTEND ON NEXT 50M MAXSIZE 500M;
+-- 7. ARCHIVE: For historical data or logging
+CREATE TABLESPACE TS_GREEN_ARCHIVE 
+DATAFILE 'green_arch_01.dbf' SIZE 500M AUTOEXTEND ON MAXSIZE 1G;
+-- 8. UNDO: Dedicated undo for this PDB's transactions
+-- Professional Note: Locally managed undo in PDBs is a modern Oracle best practice
+CREATE UNDO TABLESPACE TS_GREEN_UNDO 
+DATAFILE 'green_undo_01.dbf' SIZE 100M;
+
+COMMIT;
