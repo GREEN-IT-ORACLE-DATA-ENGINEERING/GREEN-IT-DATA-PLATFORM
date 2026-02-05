@@ -51,7 +51,7 @@ to role_green_owner;
 
 -- Role for the Reader
 create role role_green_reader;
-grant create session to role_green_reader;
+grant select on stg_green_workload to role_green_reader;
 
 --3. User Creation with GREEN_IT Prefix
 -- 1. The PDB Admin
