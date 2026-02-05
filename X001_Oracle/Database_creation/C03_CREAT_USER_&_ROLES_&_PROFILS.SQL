@@ -1,77 +1,91 @@
-ALTER SESSION SET CONTAINER = green_it_pdb;
+alter session set container = green_it_pdb;
+show con_name;
 --1.Detailed Security Profiles
 -- Profile for PDB_ADMIN (Maximum Authority)
-CREATE PROFILE PROF_GREEN_PDBA LIMIT
-    SESSIONS_PER_USER          5
-    CPU_PER_SESSION            UNLIMITED
-    IDLE_TIME                  UNLIMITED
-    FAILED_LOGIN_ATTEMPTS      3
-    PASSWORD_LIFE_TIME         90
-    PASSWORD_REUSE_TIME        365
-    PASSWORD_GRACE_TIME        7;
+create profile prof_green_pdba limit
+   sessions_per_user 5
+   cpu_per_session unlimited
+   idle_time unlimited
+   failed_login_attempts 3
+   password_life_time 90
+   password_reuse_time 365
+   password_grace_time 7;
 
 -- Profile for GREEN_IT_OWNER (Developer/DBA)
-CREATE PROFILE PROF_GREEN_OWNER LIMIT
-    SESSIONS_PER_USER          5
-    CPU_PER_SESSION            UNLIMITED
-    IDLE_TIME                  30          -- 30 mins idle timeout
-    FAILED_LOGIN_ATTEMPTS      5
-    PASSWORD_LIFE_TIME         60          -- Change every 2 months
-    PASSWORD_REUSE_TIME        180
-    PASSWORD_REUSE_MAX         3           -- Cannot reuse last 3 passwords
-    PASSWORD_GRACE_TIME        7;
+create profile prof_green_owner limit
+   sessions_per_user 5
+   cpu_per_session unlimited
+   idle_time 30          -- 30 mins idle timeout
+   failed_login_attempts 5
+   password_life_time 60          -- Change every 2 months
+   password_reuse_time 180
+   password_reuse_max 3           -- Cannot reuse last 3 passwords
+   password_grace_time 7;
 
 -- Profile for GREEN_IT_DB_READER (End User)
-CREATE PROFILE PROF_GREEN_READER LIMIT
-    SESSIONS_PER_USER          2
-    CPU_PER_SESSION            10000       -- Limit CPU usage for safety
-    IDLE_TIME                  15          -- 15 mins idle timeout
-    FAILED_LOGIN_ATTEMPTS      5
-    PASSWORD_LIFE_TIME         30
-    PASSWORD_GRACE_TIME        3;
+create profile prof_green_reader limit
+   sessions_per_user 2
+   cpu_per_session 10000       -- Limit CPU usage for safety
+   idle_time 15          -- 15 mins idle timeout
+   failed_login_attempts 5
+   password_life_time 30
+   password_grace_time 3;
 
 --2. Role-Based Access Control (RBAC)
 -- Role for the PDB Admin
-CREATE ROLE ROLE_GREEN_PDBA;
-GRANT ALL PRIVILEGES TO ROLE_GREEN_PDBA;
+create role role_green_pdba;
+grant all privileges to role_green_pdba;
 
 -- Role for the Owner (As requested: Session, Index, CRUD, View)
-CREATE ROLE ROLE_GREEN_OWNER;
-GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW, CREATE ANY INDEX, 
-INSERT ANY TABLE, UPDATE ANY TABLE, DELETE ANY TABLE,
-CREATE SEQUENCE, CREATE PROCEDURE TO ROLE_GREEN_OWNER;
+create role role_green_owner;
+grant create session,
+   create table,
+   create view,
+   create any index,
+   insert any table,
+   update any table,
+   delete any table,
+   create sequence,
+   create procedure
+to role_green_owner;
 
 -- Role for the Reader
-CREATE ROLE ROLE_GREEN_READER;
-GRANT CREATE SESSION TO ROLE_GREEN_READER;
+create role role_green_reader;
+grant create session to role_green_reader;
 
 --3. User Creation with GREEN_IT Prefix
 -- 1. The PDB Admin
-CREATE USER GREEN_IT_PDB_ADMIN IDENTIFIED BY "PdbAdmin_2026_#"
-DEFAULT TABLESPACE TS_FACT_GREEN
-PROFILE PROF_GREEN_PDBA;
-GRANT ROLE_GREEN_PDBA TO GREEN_IT_PDB_ADMIN;
+create user green_it_pdb_admin identified by "PdbAdmin_2026_#"
+   default tablespace ts_fact_green
+   profile prof_green_pdba;
+grant role_green_pdba to green_it_pdb_admin;
 
 -- 2. The Owner (Schema Creator)
-CREATE USER GREEN_IT_OWNER IDENTIFIED BY "Owner_2026_#IT"
-DEFAULT TABLESPACE TS_FACT_GREEN
-PROFILE PROF_GREEN_OWNER;
-GRANT ROLE_GREEN_OWNER TO GREEN_IT_OWNER;
+create user green_it_owner identified by "Owner_2026_#IT"
+   default tablespace ts_fact_green
+   profile prof_green_owner;
+grant role_green_owner to green_it_owner;
 
 -- 3. The Reader
-CREATE USER GREEN_IT_DB_READER IDENTIFIED BY "Reader_2026_#IT"
-DEFAULT TABLESPACE TS_FACT_GREEN
-PROFILE PROF_GREEN_READER;
-GRANT ROLE_GREEN_READER TO GREEN_IT_DB_READER;
+create user green_it_db_reader identified by "Reader_2026_#IT"
+   default tablespace ts_fact_green
+   profile prof_green_reader;
+grant role_green_reader to green_it_db_reader;
 
 -- Essential: Give Owner space to work
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_GREEN_STAGING;
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_DIM_WORKLOAD;
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_DIM_ENERGY;
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_DIM_SECURITY;
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_DIM_SCENARIO;
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_FACT_GREEN;
-ALTER USER GREEN_IT_OWNER QUOTA UNLIMITED ON TS_GREEN_ARCHIVE;
+alter user green_it_owner
+   quota unlimited on ts_green_staging;
+alter user green_it_owner
+   quota unlimited on ts_dim_workload;
+alter user green_it_owner
+   quota unlimited on ts_dim_energy;
+alter user green_it_owner
+   quota unlimited on ts_dim_security;
+alter user green_it_owner
+   quota unlimited on ts_dim_scenario;
+alter user green_it_owner
+   quota unlimited on ts_fact_green;
+alter user green_it_owner
+   quota unlimited on ts_green_archive;
 
-COMMIT;
-
+commit;
