@@ -1,29 +1,51 @@
-ALTER SESSION SET CONTAINER = green_it_pdb;
+alter session set container = green_it_pdb;
+
+show con_name;
 
 -- 1. STAGING: Raw data landing zone
-CREATE TABLESPACE TS_GREEN_STAGING 
-DATAFILE 'green_stg_01.dbf' SIZE 200M AUTOEXTEND ON NEXT 10M MAXSIZE 500M;
+create tablespace ts_green_staging
+   datafile 'green_stg_01.dbf' size 200M
+   autoextend on next 10M maxsize 500M;
 -- 2. DIM_WORKLOAD: Storage for workload metadata
-CREATE TABLESPACE TS_DIM_WORKLOAD 
-DATAFILE 'dim_work_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 500M;
+create tablespace ts_dim_workload
+   datafile 'dim_work_01.dbf' size 50M
+   autoextend on maxsize 500M;
 -- 3. DIM_ENERGY: Storage for energy source details
-CREATE TABLESPACE TS_DIM_ENERGY 
-DATAFILE 'dim_ener_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 300M;
+create tablespace ts_dim_energy
+   datafile 'dim_ener_01.dbf' size 50M
+   autoextend on maxsize 300M;
 -- 4. DIM_SECURITY: Storage for security levels and PQC status
-CREATE TABLESPACE TS_DIM_SECURITY 
-DATAFILE 'dim_secu_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 300M;
+create tablespace ts_dim_security
+   datafile 'dim_secu_01.dbf' size 50M
+   autoextend on maxsize 300M;
 -- 5. DIM_SCENARIO: Storage for scenarios and strategies
-CREATE TABLESPACE TS_DIM_SCENARIO 
-DATAFILE 'dim_scen_01.dbf' SIZE 50M AUTOEXTEND ON MAXSIZE 300M;
+create tablespace ts_dim_scenario
+   datafile 'dim_scen_01.dbf' size 50M
+   autoextend on maxsize 300M;
 -- 6. FACT_GREEN_WORKLOAD: The heavy-lifter (Measures & Metrics)
-CREATE TABLESPACE TS_FACT_GREEN 
-DATAFILE 'fact_green_01.dbf' SIZE 200M AUTOEXTEND ON NEXT 50M MAXSIZE 500M;
+create tablespace ts_fact_green
+   datafile 'fact_green_01.dbf' size 200M
+   autoextend on next 50M maxsize 500M;
 -- 7. ARCHIVE: For historical data or logging
-CREATE TABLESPACE TS_GREEN_ARCHIVE 
-DATAFILE 'green_arch_01.dbf' SIZE 500M AUTOEXTEND ON MAXSIZE 1G;
+create tablespace ts_green_archive
+   datafile 'green_arch_01.dbf' size 500M
+   autoextend on maxsize 1G;
 -- 8. UNDO: Dedicated undo for this PDB's transactions
 -- Professional Note: Locally managed undo in PDBs is a modern Oracle best practice
-CREATE UNDO TABLESPACE TS_GREEN_UNDO 
-DATAFILE 'green_undo_01.dbf' SIZE 100M;
+create undo tablespace ts_green_undo
+   datafile 'green_undo_01.dbf' size 100M;
 
-COMMIT;
+commit;
+
+-- Vérifier le conteneur actuel
+select sys_context(
+   'USERENV',
+   'CON_NAME'
+) as container_name
+  from dual;
+
+-- Vérifier les tablespaces créés
+select tablespace_name,
+       status,
+       contents
+  from dba_tablespaces;
