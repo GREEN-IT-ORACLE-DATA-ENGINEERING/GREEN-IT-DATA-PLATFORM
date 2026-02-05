@@ -1,60 +1,80 @@
-# 🏗️ Technical Documentation: Automated Data Ingestion Pipeline
+# 🏗️ Documentation Technique : Pipeline d'Ingénierie de Données Automatisée
+```text
+                                    +-----------------------+
+                                    |       CDB (root)      |
+                                    |-----------------------|
+                                    |  PDB$SEED  |  PDBs    |
+                                    |            |-----------------┐
+                                    |            | green_it_pdb   |
+                                    +------------------------------+
 
-## 1. Overview of the Ingestion Architecture
-The ingestion process was designed as an automated pipeline to move **"Green IT"** workload data from raw CSV format into a structured Oracle 19c Staging Table (`STG_GREEN_WORKLOAD`). This pipeline ensures data integrity, proper type casting, and network-efficient loading using **Direct Path Load**.
+                                    +--------------------------------+
+                                    |       files_envirement         |
+                                    |--------------------------------|
+                                    |  green_it_data.csv             |
+                                    |  green_it_load.ctl             |
+                                    |  run_ingestion.sh              |
+                                    |                                |
+                                    |  Oracle VM path:               |
+                                    |  $ORACLE_HOME/green_it         |
+                                    |  (ex: /home/oracle/green_it)   |
+                                    +--------------------------------+
+``` 
+## 1. Vue d'ensemble de l'architecture d'ingestion
+Le processus d'ingestion a été conçu comme un pipeline automatisé pour déplacer les données de charge de travail **"Green IT"** du format CSV brut vers une table de staging Oracle 19c structurée (`STG_GREEN_WORKLOAD`). Ce pipeline garantit l'intégrité des données, le bon typage et un chargement efficace en réseau utilisant **Direct Path Load**.
 
 
 
 ---
 
-## 2. Core Components of the Pipeline
+## 2. Composants principaux du pipeline
 
-| Component | Description | Role in the Project |
+| Composant | Description | Rôle dans le projet |
 | :--- | :--- | :--- |
-| **Source Data** | `green_it_data.csv` | Raw dataset containing 1,000 records of energy and performance metrics. |
-| **Orchestration Script** | `run_ingestion.sh` | A Bash script that automates the environment setup and executes SQL*Loader. |
-| **Control File** | `green_it_load.ctl` | The "brain" of the operation; defines how CSV fields map to SQL columns. |
-| **File Transfer** | **WinSCP** | Used as the SFTP bridge to transfer scripts and data from the local machine to the Oracle Linux VM. |
+| **Données Source** | `green_it_data.csv` | Ensemble de données brut contenant 1 000 enregistrements de métriques énergétiques et de performance. |
+| **Script d'Orchestration** | `run_ingestion.sh` | Un script Bash qui automatise la configuration de l'environnement et exécute SQL*Loader. |
+| **Fichier de Contrôle** | `green_it_load.ctl` | Le "cerveau" de l'opération ; définit comment les champs CSV se mappent aux colonnes SQL. |
+| **Transfert de Fichiers** | **WinSCP** | Utilisé comme pont SFTP pour transférer des scripts et des données de la machine locale vers la VM Oracle Linux. |
 
 ---
 
-## 3. Pipeline Configuration Details
+## 3. Détails de Configuration du Pipeline
 
-### 📄 The Bash Script (`run_ingestion.sh`)
-This script centralizes credentials and connection strings. It was optimized to use the verified service name:
-* **Service Name**: `green_it_pdb.local`
-* **Utility**: `sqlldr` (SQL*Loader)
-* **Automation**: Includes a post-load verification step using `sqlplus` to count the records actually present in the table.
+### 📄 Le Script Bash (`run_ingestion.sh`)
+Ce script centralise les identifiants et les chaînes de connexion. Il a été optimisé pour utiliser le nom de service vérifié :
+* **Nom de Service** : `green_it_pdb.local`
+* **Utilitaire** : `sqlldr` (SQL*Loader)
+* **Automatisation** : Inclut une étape de vérification post-chargement utilisant `sqlplus` pour compter les enregistrements réellement présents dans la table.
 
-### 🛠️ The Control File (`green_it_load.ctl`)
-The configuration was refined to handle real-world data issues:
-* **`OPTIONS (SKIP=1)`**: Skips the CSV header row.
-* **`TRAILING NULLCOLS`**: Prevents errors if a record is missing the final columns.
-* **`TERMINATED BY WHITESPACE`**: Applied to the last column (`PERFORMANCE_METRIC`) to clean invisible Windows-style line endings (`^M`).
-
----
-
-## 4. Troubleshooting & Error Resolution (The "Lessons Learned")
-The loading process faced several critical blockers that were systematically resolved:
-
-####  Network & Service Resolution (`ORA-12514`)
-* **Problem**: The PDB `green_it_pdb` was not registered in the listener.
-* **Fix**: Performed `ALTER SYSTEM REGISTER` and identified the FQSN `green_it_pdb.local`.
-
-####  Permission & Storage (`ORA-01950`)
-* **Problem**: `GREEN_IT_OWNER` had no quota on the staging tablespace.
-* **Fix**: Granted `UNLIMITED QUOTA` on `TS_GREEN_STAGING`.
-
-####  Data Integrity (`ORA-01722: invalid number`)
-* **Problem**: Invisible carriage return characters (`\r`) from Windows were being read as part of the numeric data.
-* **Fix**: Used `sed -i 's/\r$//'` to sanitize the CSV and adjusted the Control File to handle trailing whitespace.
-
-
+### 🛠️ Le Fichier de Contrôle (`green_it_load.ctl`)
+La configuration a été affinée pour gérer les problèmes de données du monde réel :
+* **`OPTIONS (SKIP=1)`** : Ignore la ligne d'en-tête CSV.
+* **`TRAILING NULLCOLS`** : Empêche les erreurs si un enregistrement manque les colonnes finales.
+* **`TERMINATED BY WHITESPACE`** : Appliqué à la dernière colonne (`PERFORMANCE_METRIC`) pour nettoyer les fins de ligne invisibles de style Windows (`^M`).
 
 ---
 
-## 5. Final Result
-* **Execution Time**: ~26 seconds for a full Direct Path load.
-* **Status**: **Success**.
-* **Total Rows Processed**: 1,000 records.
-* **Rejected/Discarded**: 0 records.S
+## 4. Dépannage & Résolution d'Erreurs (Les "Leçons Apprises")
+Le processus de chargement a rencontré plusieurs obstacles critiques qui ont été résolus systématiquement :
+
+####  Résolution Réseau & Service (`ORA-12514`)
+* **Problème** : Le PDB `green_it_pdb` n'était pas enregistré dans l'auditeur.
+* **Correction** : Exécuté `ALTER SYSTEM REGISTER` et identifié le FQSN `green_it_pdb.local`.
+
+####  Permission & Stockage (`ORA-01950`)
+* **Problème** : `GREEN_IT_OWNER` n'avait pas de quota sur l'espace de tables de staging.
+* **Correction** : Accordé `QUOTA ILLIMITÉE` sur `TS_GREEN_STAGING`.
+
+####  Intégrité des Données (`ORA-01722: nombre invalide`)
+* **Problème** : Des caractères de retour chariot invisibles (`\r`) de Windows étaient lus comme faisant partie des données numériques.
+* **Correction** : Utilisé `sed -i 's/\r$//'` pour assainir le CSV et ajusté le Fichier de Contrôle pour gérer les espaces blancs finaux.
+
+
+
+---
+
+## 5. Résultat Final
+* **Temps d'Exécution** : ~26 secondes pour un chargement complet en Direct Path.
+* **Statut** : **Succès**.
+* **Total des Lignes Traitées** : 1 000 enregistrements.
+* **Rejeté/Écarté** : 0 enregistrements.
