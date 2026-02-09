@@ -1,20 +1,34 @@
--- Connexion
-CONNECT / AS SYSDBA;
-sqlplus / as sysdba
+--Connexion
 
-ALTER SYSTEM SET UNDO_RETENTION = 1800 SCOPE=BOTH;
+CONNECT / AS SYSDBA;
 --  Arrêter la base
+
 SHUTDOWN IMMEDIATE;
 ---Démarrer en mode MOUNT
+
 STARTUP MOUNT;
 ---Activer le mode ARCHIVELOG
 ALTER DATABASE ARCHIVELOG;
 
-ALTER SESSION SET CONTAINER = green_it_pdb;   
-SHOW CON_NAME;
+ ALTER SESSION SET CONTAINER = green_it_pdb;   
+ --ouvrive lq base
+ 
+ ALTER PLUGGABLE DATABASE green_it_pdb OPEN;
 
-ALTER PLUGGABLE DATABASE green_it_pdb OPEN;
------Sauvegarde complète (Level 0)
+----Basculer (switch) vers le nouvel UNDO tablespace
+ ALTER SYSTEM SET UNDO_TABLESPACE = ts_green_undo;
+
+----verificqtion du undo_tablespace actife
+ SHOW PARAMETER undo_tablespace;
+
+---→ Définit la durée de conservation des données UNDO à 3600 secondes
+ ALTER SYSTEM SET UNDO_RETENTION = 3600 SCOPE=BOTH;
+
+ ---verification de la retentien
+ SHOW PARAMETER undo_retention;
+
+-----Sauvgarde complète (Level 0)
+
 rman target /
 RUN {
     ALLOCATE CHANNEL ch1 DEVICE TYPE DISK;
