@@ -1,0 +1,85 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Ven. Févr. 6 06:46:15 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Fichier de contrôle :   green_it_load.ctl
+Jeu de caractères UTF8 indiqué pour toutes les entrées.
+
+Fichier de données :      green_quantum_data_centers_2.csv
+  Fichier des enregistrements refusés :     green_it_errors.bad
+  Fichier de rebut :  aucune spécification
+
+ (Allouer tous les rebuts)
+
+Nombre à charger : ALL
+Nombre à ignorer : 1
+Erreurs autorisés : 10000
+Continuation :    aucune spécification
+Chemin utilisé:      Direct
+
+Table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, chargé à partir de chaque enregistrement physique.
+Option d'insertion en vigueur pour cette table : APPEND
+option TRAILING NULLCOLS effective
+
+   Nom de colonne                  Position   Long  Type de données encadr.
+------------------------------ ---------- ----- ---- ---- ---------------------
+RECORD_ID                           FIRST     *   ,  O(") CHARACTER            
+WORKLOAD_TYPE                        NEXT     *   ,  O(") CHARACTER            
+COMPUTE_DEMAND                       NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:COMPUTE_DEMAND, '.', ',')"
+STORAGE_DEMAND                       NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:STORAGE_DEMAND, '.', ',')"
+NETWORK_DEMAND                       NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:NETWORK_DEMAND, '.', ',')"
+ENERGY_SOURCE                        NEXT     *   ,  O(") CHARACTER            
+ENERGY_CONSUMPTION                   NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:ENERGY_CONSUMPTION, '.', ',')"
+RENEWABLE_SHARE                      NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:RENEWABLE_SHARE, '.', ',')"
+CARBON_EMISSIONS                     NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:CARBON_EMISSIONS, '.', ',')"
+QSO_OPTIMIZATION                     NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:QSO_OPTIMIZATION, '.', ',')"
+UNCERTAINTY_FACTOR                   NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:UNCERTAINTY_FACTOR, '.', ',')"
+SECURITY_LEVEL                       NEXT     *   ,  O(") CHARACTER            
+PQC_ENABLED                          NEXT     *   ,  O(") CHARACTER            
+ENERGY_EFFICIENCY                    NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:ENERGY_EFFICIENCY, '.', ',')"
+SERVICE_QUALITY                      NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:SERVICE_QUALITY, '.', ',')"
+SECURE_OPS_SCORE                     NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:SECURE_OPS_SCORE, '.', ',')"
+WORKLOAD_SCENARIO                    NEXT     *   ,  O(") CHARACTER            
+SCENARIO_STRATEGY                    NEXT     *   ,  O(") CHARACTER            
+OPERATIONAL_COST                     NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:OPERATIONAL_COST, '.', ',')"
+PERFORMANCE_METRIC                   NEXT     *   ,  O(") CHARACTER            
+    chaîne SQL pour la colonne : "REPLACE(:PERFORMANCE_METRIC, '.', ',')"
+
+
+Table GREEN_IT_OWNER.STG_GREEN_WORKLOAD :
+  Chargement de 1000 Lignes effectué.
+  0 Lignes : chargement impossible dû à des erreurs de données.
+  0 Lignes : chargement impossible car échec de toutes les clauses WHEN.
+  0 Lignes : chargement impossible car tous les champs étaient non renseignés.
+
+Taille du tableau de variables non utilisée dans le chemin direct.
+Lignes de tableau de colonnes :    5000
+Octets de tampon de flux de données :  256000
+Octets de tampon de lecture : 1048576
+
+Nombre total d'enregistrements logiques ignorés :          1
+Nombre total d'enregistrements logiques lus :          1000
+Nombre total d'enregistrements logiques rejetés :         0
+Nombre total d'enregistrements logiques mis au rebut :        0
+Nombre total de tampons de flux de données chargés par le thread principal de SQL*Loader :        1
+Nombre total de tampons de flux de données chargés par le thread de chargement de SQL*Loader :        0
+
+Le début de l'exécution a été effectué sur Ven. Févr. 06 06:46:15 2026
+La fin de l'exécution a été effectuée sur Ven. Févr. 06 06:46:17 2026
+
+Temps écoulé (ELAPSED) :     00:00:02.00
+Temps processeur (CPU) :    00:00:00.08

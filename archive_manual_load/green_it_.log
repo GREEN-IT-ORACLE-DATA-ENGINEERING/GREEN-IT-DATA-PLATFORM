@@ -1,0 +1,3073 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Ven. Févr. 6 05:48:41 2026
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Fichier de contrôle :   green_it_load.ctl
+Le premier fichier de données principal green_quantum_data_centers_2.csv contient une marque byteorder 
+ utf8.
+
+Fichier de données :      green_quantum_data_centers_2.csv
+  Fichier des enregistrements refusés :     green_it_errors.bad
+  Fichier de rebut :  aucune spécification
+
+ (Allouer tous les rebuts)
+
+Nombre à charger : ALL
+Nombre à ignorer : 1
+Erreurs autorisés : 10000
+Continuation :    aucune spécification
+Chemin utilisé:      Direct
+
+Table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, chargé à partir de chaque enregistrement physique.
+Option d'insertion en vigueur pour cette table : APPEND
+option TRAILING NULLCOLS effective
+
+   Nom de colonne                  Position   Long  Type de données encadr.
+------------------------------ ---------- ----- ---- ---- ---------------------
+RECORD_ID                           FIRST     *   ,  O(") CHARACTER            
+WORKLOAD_TYPE                        NEXT     *   ,  O(") CHARACTER            
+COMPUTE_DEMAND                       NEXT     *   ,  O(") CHARACTER            
+STORAGE_DEMAND                       NEXT     *   ,  O(") CHARACTER            
+NETWORK_DEMAND                       NEXT     *   ,  O(") CHARACTER            
+ENERGY_SOURCE                        NEXT     *   ,  O(") CHARACTER            
+ENERGY_CONSUMPTION                   NEXT     *   ,  O(") CHARACTER            
+RENEWABLE_SHARE                      NEXT     *   ,  O(") CHARACTER            
+CARBON_EMISSIONS                     NEXT     *   ,  O(") CHARACTER            
+QSO_OPTIMIZATION                     NEXT     *   ,  O(") CHARACTER            
+UNCERTAINTY_FACTOR                   NEXT     *   ,  O(") CHARACTER            
+SECURITY_LEVEL                       NEXT     *   ,  O(") CHARACTER            
+PQC_ENABLED                          NEXT     *   ,  O(") CHARACTER            
+ENERGY_EFFICIENCY                    NEXT     *   ,  O(") CHARACTER            
+SERVICE_QUALITY                      NEXT     *   ,  O(") CHARACTER            
+SECURE_OPS_SCORE                     NEXT     *   ,  O(") CHARACTER            
+WORKLOAD_SCENARIO                    NEXT     *   ,  O(") CHARACTER            
+SCENARIO_STRATEGY                    NEXT     *   ,  O(") CHARACTER            
+OPERATIONAL_COST                     NEXT     *   ,  O(") CHARACTER            
+PERFORMANCE_METRIC                   NEXT     *  WHT O(") CHARACTER            
+
+Enregistrement 1 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 2 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 3 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 4 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 5 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 6 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 7 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 8 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 9 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 10 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 11 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 12 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 13 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 14 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 15 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 16 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 17 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 18 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 19 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 20 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 21 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 22 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 23 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 24 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 25 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 26 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 27 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 28 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 29 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 30 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 31 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 32 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 33 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 34 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 35 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 36 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 37 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 38 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 39 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 40 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 41 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 42 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 43 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 44 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 45 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 46 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 47 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 48 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 49 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 50 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 51 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 52 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 53 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 54 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 55 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 56 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 57 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 58 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 59 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 60 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 61 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 62 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 63 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 64 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 65 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 66 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 67 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 68 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 69 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 70 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 71 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 72 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 73 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 74 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 75 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 76 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 77 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 78 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 79 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 80 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 81 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 82 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 83 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 84 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 85 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 86 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 87 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 88 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 89 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 90 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 91 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 92 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 93 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 94 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 95 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 96 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 97 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 98 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 99 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 100 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 101 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 102 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 103 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 104 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 105 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 106 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 107 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 108 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 109 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 110 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 111 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 112 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 113 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 114 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 115 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 116 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 117 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 118 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 119 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 120 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 121 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 122 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 123 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 124 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 125 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 126 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 127 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 128 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 129 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 130 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 131 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 132 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 133 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 134 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 135 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 136 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 137 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 138 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 139 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 140 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 141 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 142 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 143 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 144 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 145 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 146 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 147 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 148 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 149 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 150 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 151 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 152 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 153 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 154 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 155 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 156 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 157 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 158 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 159 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 160 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 161 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 162 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 163 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 164 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 165 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 166 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 167 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 168 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 169 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 170 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 171 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 172 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 173 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 174 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 175 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 176 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 177 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 178 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 179 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 180 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 181 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 182 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 183 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 184 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 185 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 186 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 187 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 188 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 189 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 190 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 191 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 192 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 193 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 194 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 195 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 196 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 197 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 198 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 199 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 200 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 201 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 202 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 203 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 204 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 205 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 206 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 207 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 208 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 209 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 210 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 211 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 212 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 213 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 214 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 215 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 216 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 217 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 218 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 219 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 220 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 221 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 222 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 223 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 224 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 225 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 226 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 227 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 228 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 229 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 230 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 231 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 232 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 233 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 234 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 235 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 236 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 237 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 238 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 239 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 240 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 241 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 242 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 243 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 244 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 245 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 246 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 247 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 248 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 249 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 250 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 251 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 252 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 253 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 254 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 255 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 256 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 257 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 258 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 259 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 260 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 261 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 262 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 263 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 264 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 265 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 266 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 267 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 268 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 269 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 270 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 271 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 272 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 273 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 274 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 275 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 276 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 277 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 278 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 279 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 280 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 281 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 282 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 283 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 284 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 285 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 286 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 287 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 288 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 289 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 290 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 291 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 292 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 293 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 294 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 295 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 296 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 297 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 298 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 299 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 300 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 301 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 302 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 303 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 304 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 305 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 306 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 307 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 308 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 309 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 310 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 311 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 312 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 313 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 314 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 315 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 316 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 317 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 318 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 319 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 320 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 321 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 322 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 323 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 324 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 325 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 326 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 327 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 328 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 329 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 330 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 331 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 332 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 333 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 334 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 335 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 336 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 337 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 338 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 339 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 340 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 341 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 342 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 343 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 344 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 345 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 346 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 347 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 348 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 349 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 350 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 351 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 352 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 353 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 354 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 355 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 356 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 357 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 358 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 359 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 360 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 361 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 362 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 363 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 364 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 365 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 366 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 367 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 368 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 369 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 370 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 371 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 372 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 373 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 374 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 375 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 376 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 377 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 378 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 379 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 380 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 381 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 382 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 383 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 384 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 385 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 386 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 387 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 388 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 389 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 390 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 391 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 392 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 393 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 394 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 395 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 396 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 397 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 398 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 399 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 400 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 401 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 402 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 403 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 404 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 405 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 406 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 407 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 408 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 409 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 410 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 411 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 412 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 413 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 414 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 415 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 416 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 417 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 418 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 419 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 420 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 421 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 422 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 423 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 424 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 425 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 426 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 427 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 428 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 429 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 430 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 431 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 432 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 433 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 434 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 435 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 436 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 437 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 438 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 439 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 440 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 441 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 442 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 443 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 444 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 445 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 446 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 447 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 448 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 449 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 450 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 451 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 452 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 453 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 454 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 455 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 456 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 457 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 458 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 459 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 460 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 461 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 462 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 463 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 464 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 465 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 466 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 467 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 468 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 469 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 470 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 471 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 472 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 473 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 474 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 475 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 476 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 477 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 478 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 479 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 480 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 481 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 482 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 483 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 484 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 485 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 486 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 487 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 488 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 489 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 490 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 491 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 492 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 493 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 494 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 495 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 496 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 497 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 498 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 499 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 500 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 501 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 502 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 503 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 504 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 505 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 506 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 507 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 508 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 509 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 510 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 511 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 512 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 513 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 514 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 515 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 516 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 517 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 518 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 519 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 520 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 521 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 522 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 523 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 524 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 525 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 526 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 527 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 528 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 529 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 530 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 531 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 532 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 533 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 534 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 535 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 536 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 537 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 538 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 539 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 540 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 541 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 542 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 543 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 544 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 545 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 546 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 547 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 548 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 549 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 550 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 551 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 552 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 553 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 554 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 555 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 556 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 557 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 558 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 559 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 560 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 561 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 562 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 563 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 564 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 565 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 566 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 567 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 568 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 569 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 570 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 571 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 572 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 573 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 574 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 575 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 576 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 577 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 578 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 579 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 580 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 581 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 582 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 583 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 584 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 585 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 586 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 587 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 588 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 589 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 590 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 591 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 592 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 593 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 594 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 595 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 596 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 597 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 598 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 599 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 600 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 601 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 602 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 603 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 604 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 605 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 606 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 607 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 608 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 609 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 610 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 611 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 612 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 613 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 614 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 615 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 616 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 617 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 618 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 619 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 620 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 621 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 622 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 623 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 624 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 625 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 626 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 627 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 628 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 629 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 630 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 631 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 632 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 633 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 634 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 635 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 636 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 637 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 638 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 639 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 640 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 641 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 642 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 643 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 644 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 645 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 646 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 647 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 648 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 649 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 650 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 651 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 652 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 653 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 654 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 655 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 656 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 657 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 658 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 659 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 660 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 661 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 662 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 663 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 664 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 665 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 666 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 667 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 668 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 669 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 670 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 671 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 672 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 673 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 674 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 675 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 676 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 677 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 678 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 679 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 680 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 681 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 682 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 683 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 684 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 685 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 686 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 687 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 688 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 689 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 690 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 691 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 692 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 693 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 694 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 695 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 696 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 697 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 698 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 699 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 700 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 701 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 702 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 703 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 704 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 705 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 706 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 707 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 708 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 709 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 710 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 711 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 712 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 713 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 714 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 715 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 716 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 717 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 718 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 719 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 720 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 721 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 722 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 723 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 724 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 725 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 726 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 727 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 728 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 729 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 730 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 731 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 732 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 733 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 734 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 735 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 736 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 737 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 738 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 739 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 740 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 741 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 742 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 743 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 744 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 745 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 746 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 747 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 748 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 749 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 750 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 751 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 752 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 753 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 754 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 755 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 756 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 757 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 758 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 759 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 760 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 761 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 762 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 763 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 764 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 765 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 766 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 767 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 768 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 769 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 770 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 771 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 772 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 773 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 774 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 775 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 776 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 777 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 778 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 779 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 780 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 781 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 782 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 783 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 784 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 785 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 786 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 787 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 788 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 789 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 790 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 791 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 792 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 793 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 794 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 795 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 796 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 797 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 798 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 799 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 800 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 801 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 802 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 803 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 804 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 805 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 806 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 807 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 808 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 809 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 810 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 811 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 812 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 813 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 814 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 815 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 816 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 817 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 818 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 819 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 820 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 821 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 822 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 823 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 824 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 825 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 826 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 827 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 828 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 829 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 830 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 831 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 832 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 833 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 834 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 835 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 836 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 837 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 838 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 839 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 840 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 841 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 842 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 843 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 844 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 845 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 846 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 847 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 848 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 849 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 850 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 851 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 852 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 853 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 854 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 855 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 856 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 857 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne STORAGE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 858 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 859 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 860 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 861 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 862 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 863 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 864 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 865 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 866 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 867 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 868 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 869 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 870 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 871 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 872 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 873 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 874 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 875 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 876 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 877 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 878 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 879 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 880 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 881 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 882 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 883 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 884 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 885 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 886 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 887 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 888 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 889 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 890 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 891 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 892 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 893 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 894 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 895 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 896 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 897 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 898 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 899 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 900 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 901 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 902 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 903 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 904 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 905 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 906 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 907 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 908 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 909 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 910 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 911 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 912 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 913 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 914 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 915 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 916 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 917 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 918 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 919 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 920 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 921 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 922 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 923 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 924 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 925 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 926 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 927 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 928 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 929 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 930 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 931 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 932 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 933 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 934 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 935 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 936 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 937 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 938 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 939 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 940 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 941 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 942 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 943 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 944 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 945 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 946 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 947 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 948 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 949 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 950 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 951 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 952 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 953 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 954 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 955 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 956 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 957 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 958 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 959 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 960 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 961 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 962 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 963 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 964 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 965 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 966 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 967 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 968 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 969 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 970 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 971 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 972 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 973 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 974 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 975 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 976 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 977 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 978 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 979 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 980 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 981 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 982 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 983 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 984 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 985 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 986 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 987 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 988 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 989 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 990 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 991 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 992 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 993 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 994 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 995 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 996 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 997 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 998 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 999 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+Enregistrement 1000 : Rejeté - Erreur sur table GREEN_IT_OWNER.STG_GREEN_WORKLOAD, colonne COMPUTE_DEMAND.
+ORA-01722: Nombre non valide
+
+
+Table GREEN_IT_OWNER.STG_GREEN_WORKLOAD :
+  Chargement de 0 Lignes effectué.
+  1000 Lignes : chargement impossible dû à des erreurs de données.
+  0 Lignes : chargement impossible car échec de toutes les clauses WHEN.
+  0 Lignes : chargement impossible car tous les champs étaient non renseignés.
+
+Taille du tableau de variables non utilisée dans le chemin direct.
+Lignes de tableau de colonnes :    5000
+Octets de tampon de flux de données :  256000
+Octets de tampon de lecture : 1048576
+
+Nombre total d'enregistrements logiques ignorés :          1
+Nombre total d'enregistrements logiques lus :          1000
+Nombre total d'enregistrements logiques rejetés :      1000
+Nombre total d'enregistrements logiques mis au rebut :        0
+Nombre total de tampons de flux de données chargés par le thread principal de SQL*Loader :        1
+Nombre total de tampons de flux de données chargés par le thread de chargement de SQL*Loader :        0
+
+Le début de l'exécution a été effectué sur Ven. Févr. 06 05:48:41 2026
+La fin de l'exécution a été effectuée sur Ven. Févr. 06 05:48:41 2026
+
+Temps écoulé (ELAPSED) :     00:00:00.23
+Temps processeur (CPU) :    00:00:00.10
