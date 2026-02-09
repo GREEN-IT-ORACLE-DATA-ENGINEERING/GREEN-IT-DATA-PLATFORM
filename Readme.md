@@ -1,5 +1,5 @@
-# *Rapport Technique : Administration et Sauvegarde de la Base de Données Oracle / Projet GREEN IT*
-# *🎯 Objectif*
+#  Rapport Technique : Administration et Sauvegarde de la Base de Données Oracle / Projet GREEN IT
+# 🎯 Objectif
 
 L'objectif de cette mission était de préparer, sécuriser et sauvegarder la base de données Oracle hébergeant la Pluggable Database GREEN_IT_PDB, dans un environnement machine virtuelle Oracle Linux , en garantissant :
 
@@ -8,7 +8,7 @@ La continuité de service
 L'optimisation des performances
 L'automatisation des sauvegardes
 
-# *🖥️ Environnement de Travail*
+# 🖥️ Environnement de Travail
 
 Plateforme : Machine virtuelle Oracle Linux
 
@@ -18,7 +18,7 @@ Mode d'administration : Terminal Oracle (SQLPlus & RMAN)
 
 Architecture : CDB avec Pluggable Database dédiée ( GREEN_IT_PDB)
 
-# *🔌 Préparation et Démarrage de la Base*
+# 🔌 Préparation et Démarrage de la Base
 
 Accès à la base de données avec des droits administrateur (SYSDBA) .
 
@@ -34,7 +34,7 @@ La restauration point-in-time
 
 La protection contre la perte de données
 
-# *💻 Gestion de la base de données PluggableGREEN_IT_PDB*
+# 💻 Gestion de la base de données PluggableGREEN_IT_PDB
 
 Sélection explicite de la PDB GREEN_IT_PDBafin de travailler uniquement sur l'environnement Green IT.
 
@@ -42,7 +42,7 @@ Ouverture de la PDB pour permettre les opérations d'administration et de sauveg
 
 Cette approche garantit une isolation complète des données du projet par rapport au conteneur racine (CDB).
 
-# *🔄 Gestion et Optimisation de l'UNDO*
+# 🔄 Gestion et Optimisation de l'UNDO
 
 Basculement vers un tablespace UNDO dédié au projet Green IT.
 
@@ -56,7 +56,7 @@ Améliorer la gestion des transactions
 
 Réduire les risques d'erreurs liées à l'expiration des données UNDO
 
-# *💾 Stratégie de Sauvegarde RMAN*
+# 💾 Stratégie de Sauvegarde RMAN
 Sauvegarde Complète (Niveau 0)
 
 Mise en place d'une sauvegarde complète de la PDBGREEN_IT_PDB .
@@ -77,7 +77,7 @@ Un temps de sauvegarde plus court
 
 Une meilleure efficacité opérationnelle
 
-# *🔍 Vérification des Sauvegardes et Journaux*
+# 🔍 Vérification des Sauvegardes et Journaux
 
 Contrôle de l'ensemble des sauvegardes existantes afin de s'assurer de leur disponibilité.
 
@@ -85,7 +85,7 @@ Vérification de la génération et de l'archivage des journaux de transactions 
 
 Ces vérifications garantissent que la base peut être restaurée à tout moment en cas d'incident.
 
-# *🛠️ Automatisation des Sauvegardes*
+# 🛠️ Automatisation des Sauvegardes
 
 Création d'un script automatisé dédié aux sauvegardes de la PDB.
 
@@ -99,7 +99,7 @@ Aucune intervention manuelle requise
 
 Cette automatisation assure une sauvegarde régulière et fiable .
 
-# *⚡ Optimisation des Sauvegardes Incrémentielles*
+# ⚡ Optimisation des Sauvegardes Incrémentielles
 
 Activation du Block Change Tracking , un mécanisme Oracle permettant d'identifier précisément les blocs modifiés.
 
@@ -111,7 +111,7 @@ Une réduction de la charge sur le système
 
 Vérification de l'état du fichier de suivi pour confirmer son bon fonctionnement.
 
-# *✅ Technique Bilan*
+# ✅ Technique Bilan
 
 Base Oracle préparée et sécurisée dans un environnement virtuel.
 
@@ -127,6 +127,6 @@ Sauvegardes automatisées via script et système de planification.
 
 Optimisation des performances grâce au Block Change Tracking.
 
-# *🎓 Conclusion*
+# 🎓 Conclusion
 
 Cette mission a permis de mettre en place une architecture de sauvegarde professionnelle , conforme aux bonnes pratiques DBA Oracle , garantissant la sécurité, la performance et la disponibilité des données du projet GREEN IT .
