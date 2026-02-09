@@ -1,5 +1,8 @@
 -- Connexion
 CONNECT / AS SYSDBA;
+sqlplus / as sysdba
+
+ALTER SYSTEM SET UNDO_RETENTION = 1800 SCOPE=BOTH;
 --  Arrêter la base
 SHUTDOWN IMMEDIATE;
 ---Démarrer en mode MOUNT
