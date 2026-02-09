@@ -1,4 +1,4 @@
-# Rapport Technique : Administration et Sauvegarde de la Base de Données Oracle – Projet GREEN IT
+#  Rapport Technique : Administration et Sauvegarde de la Base de Données Oracle / Projet GREEN IT
 # 🎯 Objectif
 
 L'objectif de cette mission était de préparer, sécuriser et sauvegarder la base de données Oracle hébergeant la Pluggable Database GREEN_IT_PDB, dans un environnement machine virtuelle Oracle Linux , en garantissant :
