@@ -1,3 +1,10 @@
+Oracle Database layer:
+- Schema design
+- Indexing
+- RMAN backup
+- Security & roles
+
+
 # X001_Oracle - Oracle Database Layer
 
 ## Overview
@@ -304,7 +311,11 @@ X001_Oracle/
 
 - **Main Project**: [GREEN-IT-DATA-PLATFORM](../README.md)
 - **Architecture Document**: [docs/architecture.md](../docs/architecture.md)
+<<<<<<< HEAD
+- **Lakehouse Layer**: [X002_lakehouse](../X002_lakehouse/README.md)
+=======
 - **Databricks Layer**: [X002_Databricks](../X002_Databricks/README.md)
+>>>>>>> origin/main
 - **Power BI Layer**: [X003_PowerBI](../X003_PowerBI/README.md)
 
 ---
@@ -325,4 +336,8 @@ For questions or contributions, please open an issue in the main repository.
 
 ---
 
+<<<<<<< HEAD
 **Building Sustainable Data Infrastructure**
+=======
+**Building Sustainable Data Infrastructure**
+>>>>>>> origin/main
