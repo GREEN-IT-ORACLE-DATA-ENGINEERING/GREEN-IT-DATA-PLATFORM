@@ -78,7 +78,6 @@ X002_lakehouse/
 │
 └── src/                               # Python source code
     ├── __init__.py                    # Package initializer
-    ├── 01_oracle_connection_test.py  # Test Oracle JDBC connectivity (PySpark)
     ├── 02_bronze_ingestion.py        # Extract data from Oracle to Bronze
     ├── 03_silver_transformation.py   # Transform Bronze to Silver
     ├── 04_gold_star_schema.py        # Build Gold star schema
@@ -93,78 +92,27 @@ X002_lakehouse/
 
 ### Source Code (`src/`)
 
-#### `01_oracle_connection_test.py`
-**Purpose**: Test Oracle database connectivity using PySpark and JDBC driver
-
-**Technology Stack**:
-- PySpark Session
-- Oracle JDBC driver
-- JDBC URL connection
-
-**Key Features**:
-- Validates Oracle connection
-- Tests JDBC driver configuration
-- Simple query execution test (`SELECT 1 FROM dual`)
-- Prerequisite for data ingestion
-
----
-
 #### `02_bronze_ingestion.py`
 **Purpose**: Extract raw data from Oracle database into Bronze layer
 
-**Technology Stack**:
-- `oracledb` (Python Oracle driver - Thin mode)
-- `pandas` for data manipulation
-- `pathlib` for file handling
-
 **Process**:
-1. **Connect** to Oracle database (`GREEN_IT_PDB`)
-2. **Execute SQL Query**: Extract all columns from `stg_green_workload` staging table
-3. **Load** data into Pandas DataFrame
-4. **Write** to Bronze layer as CSV file
-5. **Close** database connection
-
-**Data Source**: `green_it_owner.stg_green_workload` table
+1. Connect to Oracle database (`GREEN_IT_PDB`) using `oracledb` driver
+2. Extract all columns from `green_it_owner.stg_green_workload` table
+3. Load data into Pandas DataFrame
+4. Write to Bronze layer as CSV file
 
 **Output**: `Medallion/Bronze/stg_green_workload.csv`
-
-**Key Columns Extracted**:
-- `record_id`, `workload_type`, `compute_demand`, `storage_demand`
-- `network_demand`, `energy_source`, `energy_consumption`
-- `renewable_share`, `carbon_emissions`, `qso_optimization`
-- `uncertainty_factor`, `security_level`, `pqc_enabled`
-- `energy_efficiency`, `service_quality`, `secure_ops_score`
-- `workload_scenario`, `scenario_strategy`, `operational_cost`
-- `performance_metric`
 
 ---
 
 #### `03_silver_transformation.py`
 **Purpose**: Clean and transform Bronze data into Silver layer
 
-**Technology Stack**:
-- `pandas` for transformation logic
-- `pathlib` for file handling
-- `datetime` for audit columns
-
-**Transformation Steps**:
-
-1. **Load Bronze** Parquet file
-2. **Text Standardization**:
-   - Convert to lowercase
-   - Trim whitespace
-   - Columns: `WORKLOAD_TYPE`, `ENERGY_SOURCE`, `SECURITY_LEVEL`, `WORKLOAD_SCENARIO`, `SCENARIO_STRATEGY`
-
-3. **Data Type Casting**:
-   - Convert numeric columns with error handling (`coerce`)
-   - Columns: `COMPUTE_DEMAND`, `STORAGE_DEMAND`, `NETWORK_DEMAND`, `ENERGY_CONSUMPTION`, `CARBON_EMISSIONS`, `OPERATIONAL_COST`
-
-4. **Business Logic**:
-   - **Carbon Intensity** calculation: `CARBON_EMISSIONS / ENERGY_CONSUMPTION`
-   - Adds efficiency metric for analysis
-
-5. **Audit Columns**:
-   - `SILVER_PROCESSED_AT`: Timestamp of processing
+**Transformations**:
+- Text standardization (lowercase, trimmed)
+- Numeric data type casting with error handling
+- Calculate **Carbon Intensity**: `CARBON_EMISSIONS / ENERGY_CONSUMPTION`
+- Add processing timestamp: `SILVER_PROCESSED_AT`
 
 **Input**: `Medallion/Bronze/stg_green_workload.parquet`
 
@@ -175,51 +123,11 @@ X002_lakehouse/
 #### `04_gold_star_schema.py`
 **Purpose**: Build dimensional star schema for analytical queries
 
-**Technology Stack**:
-- `pandas` for dimensional modeling
-- `pathlib` for file handling
+**Star Schema**:
+- **4 Dimensions**: DIM_WORKLOAD, DIM_ENERGY, DIM_SECURITY, DIM_SCENARIO
+- **1 Fact Table**: FACT_GREEN_WORKLOAD with all metrics
 
-**Star Schema Design**:
-
-##### Dimension Tables
-
-1. **DIM_WORKLOAD**
-   - `workload_id` (PK)
-   - `RECORD_ID`
-   - `WORKLOAD_TYPE`
-
-2. **DIM_ENERGY**
-   - `energy_id` (PK)
-   - `ENERGY_SOURCE`
-   - `RENEWABLE_SHARE`
-
-3. **DIM_SECURITY**
-   - `security_id` (PK)
-   - `SECURITY_LEVEL`
-   - `PQC_ENABLED` (Post-Quantum Cryptography)
-
-4. **DIM_SCENARIO**
-   - `scenario_id` (PK)
-   - `WORKLOAD_SCENARIO`
-   - `SCENARIO_STRATEGY`
-
-##### Fact Table
-
-**FACT_GREEN_WORKLOAD**
-- **Foreign Keys**: `workload_id`, `energy_id`, `security_id`, `scenario_id`
-- **Measures**:
-  - Resource Demand: `COMPUTE_DEMAND`, `STORAGE_DEMAND`, `NETWORK_DEMAND`
-  - Energy Metrics: `ENERGY_CONSUMPTION`, `CARBON_EMISSIONS`
-  - Cost: `OPERATIONAL_COST`
-  - Performance: `ENERGY_EFFICIENCY`, `SERVICE_QUALITY`, `SECURE_OPS_SCORE`
-  - Optimization: `QSO_OPTIMIZATION`, `PERFORMANCE_METRIC`, `UNCERTAINTY_FACTOR`
-
-**Process**:
-1. Load Silver data
-2. Extract and deduplicate dimensions
-3. Generate surrogate keys for each dimension
-4. Join Silver data with dimensions to create fact table
-5. Save dimension and fact tables as Parquet files
+**Process**: Extract dimensions, generate surrogate keys, join to create fact table
 
 **Input**: `Medallion/Silver/stg_green_workload_clean.parquet`
 
@@ -233,61 +141,26 @@ X002_lakehouse/
 ---
 
 #### `csv_to_parquet.py`
-**Purpose**: Convert CSV files to optimized Parquet format
-
-**Technology Stack**:
-- `pandas`
-- `pyarrow` engine
-- Snappy compression
-
-**Features**:
-- Reads CSV from Bronze layer
-- Converts to Parquet with Snappy compression
-- Reduces file size and improves query performance
-- Maintains data integrity
-
-**Usage**: Utility for converting CSV exports to Parquet
-
----
+**Purpose**: Convert CSV to Parquet format with Snappy compression
 
 #### `view_parquet.py`
-**Purpose**: Inspect and preview Parquet file contents
-
-**Technology Stack**:
-- `pandas`
-
-**Features**:
-- Display row count
-- List all columns
-- Preview first 10 rows of data
-- Quick data validation tool
-
-**Usage**: Data quality checks and exploration
+**Purpose**: Inspect Parquet files (row count, columns, preview data)
 
 ---
 
 ## 🔄 Data Flow Pipeline
 
-### Complete Pipeline Execution Order
+### Pipeline Execution
 
 ```bash
-# Step 1: Test connection (optional)
-python src/01_oracle_connection_test.py
-
-# Step 2: Ingest raw data from Oracle (Bronze)
+# Step 1: Ingest raw data from Oracle (Bronze)
 python src/02_bronze_ingestion.py
 
-# Step 3: Clean and transform (Silver)
+# Step 2: Clean and transform (Silver)
 python src/03_silver_transformation.py
 
-# Step 4: Build star schema (Gold)
+# Step 3: Build star schema (Gold)
 python src/04_gold_star_schema.py
-
-# Optional: Convert CSV to Parquet
-python src/csv_to_parquet.py
-
-# Optional: View data
-python src/view_parquet.py
 ```
 
 ### Data Transformation Summary
@@ -300,216 +173,110 @@ python src/view_parquet.py
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
-| Technology    | Purpose                          |
-|---------------|----------------------------------|
-| Python 3.x    | Core programming language        |
-| Pandas        | Data manipulation & transformation |
-| OracleDB      | Oracle database connectivity     |
-| PySpark       | Distributed data processing (testing) |
-| PyArrow       | Parquet file handling            |
-| Parquet       | Columnar storage format          |
-| Pathlib       | Cross-platform file path handling |
+- **Python 3.x** - Core programming language
+- **Pandas** - Data manipulation & transformation
+- **OracleDB** - Oracle database connectivity
+- **PyArrow** - Parquet file handling
+- **Parquet** - Columnar storage format
 
 ---
 
 ## 📊 Data Model
 
-### Bronze Layer Schema
-Direct copy of Oracle staging table with 20+ columns including workload characteristics, energy metrics, security settings, and performance indicators.
-
-### Silver Layer Enhancements
-- Standardized text fields (lowercase, trimmed)
-- Validated numeric data types
-- **Calculated Field**: `CARBON_INTENSITY` (emissions per unit energy)
-- Audit timestamp: `SILVER_PROCESSED_AT`
-
-### Gold Layer Star Schema
-- **4 Dimension Tables**: Workload, Energy, Security, Scenario
-- **1 Fact Table**: Green workload metrics
-- Optimized for:
-  - Energy consumption analysis
-  - Carbon emissions tracking
-  - Cost optimization
-  - Performance monitoring
-  - Security compliance
+- **Bronze**: Direct copy of Oracle staging table (20+ columns)
+- **Silver**: Cleaned data with calculated `CARBON_INTENSITY` field
+- **Gold**: Star schema (4 dimensions + 1 fact table) optimized for analytics
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 ```bash
-# Install required Python packages
-pip install pandas
-pip install oracledb
-pip install pyarrow
-pip install pyspark  # Optional for connection testing
+pip install pandas oracledb pyarrow
 ```
 
-### Configuration Requirements
-
-Update database connection parameters in `02_bronze_ingestion.py`:
-```python
-connection = oracledb.connect(
-    user="GREEN_IT_OWNER",
-    password="Your_Password",
-    host="your_host_ip",
-    port=1521,
-    service_name="GREEN_IT_PDB"
-)
-```
+### Configuration
+Update connection parameters in `02_bronze_ingestion.py` with your Oracle credentials.
 
 ### Execution
-
-Run the pipeline sequentially to process data through all layers:
-
 ```bash
 cd X002_lakehouse/src
-python 02_bronze_ingestion.py    # Oracle → Bronze
-python 03_silver_transformation.py  # Bronze → Silver
-python 04_gold_star_schema.py      # Silver → Gold
+python 02_bronze_ingestion.py      # Oracle → Bronze
+python 03_silver_transformation.py # Bronze → Silver
+python 04_gold_star_schema.py     # Silver → Gold
 ```
 
 ---
 
 ## 📈 Use Cases
 
-This lakehouse implementation supports various Green IT analytical scenarios:
-
-1. **Energy Efficiency Analysis**
-   - Track energy consumption patterns
-   - Identify optimization opportunities
-   - Monitor renewable energy usage
-
-2. **Carbon Footprint Tracking**
-   - Calculate carbon intensity metrics
-   - Monitor emissions by workload type
-   - Analyze renewable share impact
-
-3. **Cost Optimization**
-   - Correlate operational costs with performance
-   - Identify cost-effective configurations
-   - Resource utilization analysis
-
-4. **Security & Compliance**
-   - Track security levels across workloads
-   - Monitor PQC (Post-Quantum Cryptography) adoption
-   - Security scoring analysis
-
-5. **Performance Monitoring**
-   - Service quality metrics
-   - Performance vs. energy trade-offs
-   - Workload scenario analysis
+- **Energy Efficiency Analysis** - Track consumption patterns and optimization opportunities
+- **Carbon Footprint Tracking** - Monitor emissions and carbon intensity metrics
+- **Cost Optimization** - Analyze operational costs vs. performance
+- **Security & Compliance** - Track security levels and PQC adoption
+- **Performance Monitoring** - Service quality and workload scenario analysis
 
 ---
 
-## 🔍 Key Metrics Available in Gold Layer
+## 🔍 Key Metrics
 
-### Resource Metrics
-- Compute Demand
-- Storage Demand
-- Network Demand
-
-### Energy & Environmental
-- Energy Consumption
-- Carbon Emissions
-- Renewable Share
-- Carbon Intensity (calculated)
-
-### Financial
-- Operational Cost
-
-### Performance & Quality
-- Energy Efficiency
-- Service Quality
-- Performance Metric
-- Secure Operations Score
-
-### Optimization
-- QSO (Quality-Security-Optimization) Score
-- Uncertainty Factor
+**Resources**: Compute, Storage, Network Demand | **Energy**: Consumption, Carbon Emissions, Renewable Share, Carbon Intensity | **Financial**: Operational Cost | **Performance**: Energy Efficiency, Service Quality, Secure Ops Score, QSO Score
 
 ---
 
-## 🔗 Integration Points
+## 🔗 Integration
 
-### Upstream (Input)
-- **X001_Oracle**: Oracle Database with `stg_green_workload` staging table
-- Source schema: `green_it_owner`
-- PDB: `GREEN_IT_PDB`
-
-### Downstream (Output)
-- **X003_Powerbi**: Power BI dashboards consume Gold layer Parquet files
-- Star schema optimized for DirectQuery or Import mode
-- Pre-aggregated dimensions for fast visualization
+**Upstream**: X001_Oracle (`green_it_owner.stg_green_workload` on `GREEN_IT_PDB`)  
+**Downstream**: X003_Powerbi (consumes Gold layer Parquet files)
 
 ---
 
-## 🎯 Best Practices Implemented
+## 🎯 Best Practices
 
-1. **Separation of Concerns**: Each layer has distinct purpose and transformations
-2. **Immutable Bronze**: Raw data preserved without modification
-3. **Data Quality**: Type validation and standardization in Silver layer
-4. **Dimensional Modeling**: Star schema in Gold for optimal query performance
-5. **Columnar Storage**: Parquet format for efficient analytics
-6. **Audit Trail**: Timestamps track data processing lineage
-7. **Modular Design**: Each script handles one layer transformation
-8. **Path Management**: Using `pathlib` for cross-platform compatibility
+- Separation of concerns (Bronze/Silver/Gold)
+- Immutable Bronze layer
+- Data quality validation in Silver
+- Star schema dimensional modeling
+- Columnar Parquet storage
+- Audit trail with timestamps
+- Modular script design
 
 ---
 
 ## 📝 Future Enhancements
 
-Potential improvements for this lakehouse implementation:
-
-- [ ] **Incremental Processing**: Delta Lake integration for change data capture
-- [ ] **Data Quality Checks**: Great Expectations framework for validation
-- [ ] **Orchestration**: Apache Airflow/Prefect for pipeline automation
-- [ ] **Partitioning**: Date-based partitioning for large datasets
-- [ ] **Metadata Management**: Data catalog integration (Apache Atlas/DataHub)
-- [ ] **Monitoring**: Add logging and alerting for pipeline failures
-- [ ] **Testing**: Unit tests for transformation logic
-- [ ] **Documentation**: Auto-generate data dictionary from Gold schema
+- Delta Lake for incremental processing
+- Data quality validation framework
+- Pipeline orchestration (Airflow/Prefect)
+- Date-based partitioning
+- Logging and monitoring
+- Unit tests
 
 ---
 
 ## 🎓 Conclusion
 
-The **X002_lakehouse** module successfully implements a modern **Medallion Architecture** that bridges the gap between transactional Oracle database storage and analytical Power BI reporting. By implementing the Bronze-Silver-Gold pattern, this solution provides:
+The **X002_lakehouse** implements a Medallion Architecture (Bronze-Silver-Gold) that transforms raw Oracle data into analytics-ready datasets for Power BI visualization.
 
-###  **Achieved Objectives**
+**Key Benefits**:
+- Progressive data quality refinement
+- Optimized Parquet storage for analytical queries
+- Star schema designed for Green IT KPIs
+- Complete data lineage tracking
 
-1. **Data Quality**: Progressive refinement from raw to analytics-ready data
-2. **Performance**: Columnar Parquet format optimized for analytical queries
-3. **Scalability**: Modular architecture supports growing data volumes
-4. **Maintainability**: Clear separation between ingestion, transformation, and modeling
-5. **Analytics-Ready**: Star schema specifically designed for Green IT KPIs
+**Business Impact**:
+- Energy consumption and carbon footprint analytics
+- Cost optimization insights
+- Security and performance monitoring
+- Decision support for Green IT initiatives
 
-### 🌟 **Business Value**
-
-- **Energy Insights**: Enables detailed analysis of energy consumption patterns
-- **Carbon Intelligence**: Tracks and measures carbon footprint across workloads
-- **Cost Optimization**: Identifies opportunities for operational efficiency
-- **Security Visibility**: Monitors security posture and PQC adoption
-- **Decision Support**: Provides reliable data foundation for strategic planning
-
-### 🔧 **Technical Excellence**
-
-- Follows industry-standard lakehouse patterns
-- Implements dimensional modeling best practices
-- Uses efficient file formats (Parquet with compression)
-- Maintains data lineage across all layers
-- Supports both batch processing and analytics workloads
-
-### 🚀 **Impact**
-
-This lakehouse implementation serves as the **critical data transformation layer** in the GREEN-IT-DATA-PLATFORM, ensuring that raw operational data from Oracle is systematically refined into high-quality, performant, and business-friendly datasets ready for visualization and decision-making in Power BI.
-
-The architecture demonstrates a production-ready approach to building a data lakehouse for Green IT analytics, combining the flexibility of data lakes with the structure and governance of data warehouses.
+This lakehouse serves as the **critical data transformation layer** in the GREEN-IT-DATA-PLATFORM, bridging Oracle database and Power BI reporting.
 
 ---
+
+**Project**: GREEN-IT-DATA-PLATFORM | **Module**: X002_lakehouse | **Version**: 1.0 | **Updated**: February 2026
 
 
